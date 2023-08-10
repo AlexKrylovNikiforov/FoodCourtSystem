@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="691a4c13-9219-47b4-9b1a-2f1be2606e40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FoodCourtSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/builder/Builder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/builder/CuisineBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/builder/DrinkBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/builder/LunchBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/builder/OrderBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/consoleview/ConsoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/consoleview/ConsoleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/complement/ComplementData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/complement/FreeComplementData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/dessert/ItalianDessertData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/dessert/MexicanDessertData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/dessert/PolishDessertData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/drink/DrinkData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/maincourse/ItalianMainCourseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/maincourse/MexicanMainCourseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/maincourse/PolishMainCourseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/ComplementItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/CourseItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/DessertItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/DrinkItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/FreeItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manager/CuisineManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manager/FoodCourtManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manager/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manager/OrderManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Complement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/CompleteDrink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Cuisine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Drink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/FreeComplement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Lunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/OutputFormatter.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ThjaFxDDla9UA71bmGk1RKJPwJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alexlm/IdeaProjects/FoodCourtSystem/src&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FoodCourtSystem" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="691a4c13-9219-47b4-9b1a-2f1be2606e40" name="Changes" comment="" />
+      <created>1691502271104</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691502271104</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/consoleview/ConsoleController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/consoleview/ConsoleController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/manager/FoodCourtManager.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/manager/CuisineManager.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/consoleview/ConsoleController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="availableCuisines" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
