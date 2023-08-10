@@ -1,34 +1,30 @@
 package model;
 
-import interfaces.CourseItem;
-import interfaces.DessertItem;
-
 public class Lunch{
 
-    private CourseItem mainCourse;
-    private DessertItem dessert;
+    private MainCourse mainCourse;
+    private Dessert dessert;
+    private float price;
 
-    private float price = mainCourse.getPrice() + dessert.getPrice();
-
-    public CourseItem getMainCourse() {
+    public MainCourse getMainCourse() {
         return mainCourse;
     }
 
-    public void setMainCourse(CourseItem mainCourse) {
+    public void setMainCourse(MainCourse mainCourse) {
         this.mainCourse = mainCourse;
     }
 
-    public DessertItem getDessert() {
+    public Dessert getDessert() {
         return dessert;
     }
 
-    public void setDessert(DessertItem dessert) {
+    public void setDessert(Dessert dessert) {
         this.dessert = dessert;
     }
 
 
     public float getPrice() {
-        return price;
+        return mainCourse.getPrice() + dessert.getPrice();
     }
 }
 

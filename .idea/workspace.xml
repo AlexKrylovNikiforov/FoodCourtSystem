@@ -1,50 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="691a4c13-9219-47b4-9b1a-2f1be2606e40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodCourtSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/CuisineBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/DrinkBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/LunchBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/OrderBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/consoleview/ConsoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/consoleview/ConsoleView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/complement/ComplementData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/complement/FreeComplementData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/dessert/ItalianDessertData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/dessert/MexicanDessertData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/dessert/PolishDessertData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/drink/DrinkData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/maincourse/ItalianMainCourseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/maincourse/MexicanMainCourseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/maincourse/PolishMainCourseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/ComplementItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/CourseItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/DessertItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/DrinkItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/FreeItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/manager/CuisineManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/manager/FoodCourtManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/manager/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/manager/OrderManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Complement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CompleteDrink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Cuisine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Drink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/FreeComplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Lunch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/OutputFormatter.java" afterDir="false" />
+    <list default="true" id="691a4c13-9219-47b4-9b1a-2f1be2606e40" name="Changes" comment="Files pushed">
+      <change afterPath="$PROJECT_DIR$/src/model/Dessert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/MainCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/builder/LunchBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/builder/LunchBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/consoleview/ConsoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/consoleview/ConsoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager/CuisineManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/CuisineManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager/FoodCourtManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/FoodCourtManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Lunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Lunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/OutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/OutputFormatter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +46,8 @@
     &quot;last_opened_file_path&quot;: &quot;/home/alexlm/IdeaProjects/FoodCourtSystem/src&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -110,6 +78,14 @@
       <option name="presentableId" value="Default" />
       <updated>1691502271104</updated>
     </task>
+    <task id="LOCAL-00001" summary="Files pushed">
+      <created>1691687647400</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691687647400</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,17 +99,21 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Files pushed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Files pushed" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/consoleview/ConsoleController.java</url>
-          <line>49</line>
+          <line>47</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/consoleview/ConsoleController.java</url>
-          <line>50</line>
+          <line>48</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -148,8 +128,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/consoleview/ConsoleController.java</url>
-          <line>41</line>
+          <line>39</line>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/builder/LunchBuilder.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/builder/LunchBuilder.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -17,18 +17,18 @@ public class OutputFormatter {
 
     public String formatMainCourseOutput (Cuisine cuisine) {
         StringBuilder builder = new StringBuilder();
-        builder.append("\n" + cuisine.getName().toUpperCase() + " MAIN COURSES:" + "\n");
+        builder.append("\n").append(cuisine.getName().toUpperCase()).append(" MAIN COURSES:").append("\n");
         for (CourseItem courseItem: cuisine.getMainCourseList()) {
-            builder.append(courseItem.getName() + ": " + courseItem.getPrice() + "EUR\n");
+            builder.append(courseItem.getName()).append(": ").append(courseItem.getPrice()).append("EUR\n");
         }
         return builder.toString();
     }
 
     public String formatDessertOutput(Cuisine cuisine) {
         StringBuilder builder = new StringBuilder();
-        builder.append(cuisine.getName().toUpperCase() + " DESSERTS:" + "\n");
+        builder.append(cuisine.getName().toUpperCase()).append(" DESSERTS:").append("\n");
         for (DessertItem dessertItem: cuisine.getDessertList()) {
-            builder.append(dessertItem.getName() + ": " + dessertItem.getPrice() + "EUR\n");
+            builder.append(dessertItem.getName()).append(": ").append(dessertItem.getPrice()).append("EUR\n");
         }
         return builder.toString();
     }
@@ -43,8 +43,14 @@ public class OutputFormatter {
 
     public String formatOrderOutput(Order order) {
         StringBuilder builder = new StringBuilder();
-        builder.append(order.getLunch() + "\n" + order.getDrink() != null ? order.getDrink() : "");
-        builder.append("Total price: " + order.getPrice());
+        if(order.getLunch() != null) {
+            builder.append(order.getLunch().getMainCourse().getName()).append("\n");
+            builder.append(order.getLunch().getDessert().getName()).append("\n");
+        } else {
+            builder.append("No lunch selected\n");
+        }
+        builder.append(order.getDrink() != null ? order.getDrink().getName() + "\n" : "No drink selected\n");
+        builder.append("Total price: ").append(order.getPrice());
         return builder.toString();
     }
 
@@ -52,7 +58,7 @@ public class OutputFormatter {
         StringBuilder builder = new StringBuilder();
         int count = 1;
         for(Cuisine cuisine: cuisines) {
-            builder.append(count + ". " + cuisine.getName() + "\n");
+            builder.append(count).append(". ").append(cuisine.getName()).append("\n");
             count++;
         }
         return builder.toString();
@@ -62,7 +68,7 @@ public class OutputFormatter {
         StringBuilder builder = new StringBuilder();
         List<DrinkData> availableDrinks = Arrays.stream(DrinkData.values()).toList();
         for(DrinkData drink: availableDrinks) {
-            builder.append(drink.getName() + ": " + drink.getPrice() + "EUR");
+            builder.append(drink.getName()).append(": ").append(drink.getPrice()).append("EUR").append("\n");
         }
         return builder.toString();
     }
@@ -72,7 +78,7 @@ public class OutputFormatter {
         builder.append("COMPLEMENTS: " + "\n");
         List<FreeComplementData> availableComplements = Arrays.stream(FreeComplementData.values()).toList();
         for(FreeComplementData complement: availableComplements) {
-            builder.append(complement.getName() + ": FREE");
+            builder.append(complement.getName()).append(": FREE\n");
             return builder.toString();
         }
         return null;

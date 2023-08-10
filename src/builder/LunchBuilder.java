@@ -1,8 +1,8 @@
 package builder;
 
-import interfaces.CourseItem;
-import interfaces.DessertItem;
+import model.Dessert;
 import model.Lunch;
+import model.MainCourse;
 
 public class LunchBuilder implements Builder{
 
@@ -12,12 +12,12 @@ public class LunchBuilder implements Builder{
         return lunch;
     }
 
-    public LunchBuilder mainCourse(CourseItem mainCourse) {
+    public LunchBuilder mainCourse(MainCourse mainCourse) {
         lunch.setMainCourse(mainCourse);
         return this;
     }
 
-    public LunchBuilder dessert(DessertItem dessert) {
+    public LunchBuilder dessert(Dessert dessert) {
         lunch.setDessert(dessert);
         return this;
     }

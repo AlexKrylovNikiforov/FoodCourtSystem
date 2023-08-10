@@ -15,8 +15,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FoodCourtManager implements Manager{
-    private CuisineManager cuisineManager = new CuisineManager();
-    private OrderManager orderManager = new OrderManager();
+    private final CuisineManager cuisineManager = new CuisineManager();
+    private final OrderManager orderManager = new OrderManager();
 
     public List<Cuisine> initializeFoodCourt() {
         List<Cuisine> availableCuisines = new ArrayList<>();
@@ -39,11 +39,11 @@ public class FoodCourtManager implements Manager{
         return cuisineManager.findCuisineByName(cuisines, name);
     }
 
-    public CourseItem getCourseByName(Cuisine cuisine, String courseName) {
+    public MainCourse getCourseByName(Cuisine cuisine, String courseName) {
         return cuisineManager.findCourseByName(cuisine, courseName);
     }
 
-    public DessertItem getDessertByName (Cuisine cuisine, String dessertName) {
+    public Dessert getDessertByName (Cuisine cuisine, String dessertName) {
         return cuisineManager.findDessertByName(cuisine, dessertName);
     }
 
@@ -56,7 +56,7 @@ public class FoodCourtManager implements Manager{
         return cuisine;
     }
 
-    public Lunch getLunch(CourseItem mainCourse, DessertItem dessert) {
+    public Lunch getLunch(MainCourse mainCourse, Dessert dessert) {
         return cuisineManager.getLunch(mainCourse, dessert);
     }
 

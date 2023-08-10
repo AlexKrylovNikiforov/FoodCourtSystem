@@ -3,7 +3,6 @@ package model;
 public class Order{
     private Lunch lunch;
     private CompleteDrink drink;
-    private float price = drink != null ? lunch.getPrice() + drink.getPrice() : lunch.getPrice();
 
     public Lunch getLunch() {
         return lunch;
@@ -22,6 +21,6 @@ public class Order{
     }
 
     public float getPrice() {
-        return price;
+        return drink != null ? lunch.getPrice() + drink.getPrice() : lunch.getPrice();
     }
 }

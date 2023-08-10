@@ -20,19 +20,19 @@ public class CuisineManager implements Manager{
         return new CuisineBuilder().name(name).mainCourseList(mainCourses).dessertList(desserts).build();
     }
 
-    public CourseItem findCourseByName (Cuisine cuisine, String name) {
+    public MainCourse findCourseByName (Cuisine cuisine, String name) {
         for(CourseItem mainCourse: cuisine.getMainCourseList()) {
             if(mainCourse.getName().equalsIgnoreCase(name)) {
-                return mainCourse;
+                return new MainCourse(name, mainCourse.getPrice());
             }
         }
         throw new RuntimeException("No course found");
     }
 
-    public DessertItem findDessertByName (Cuisine cuisine, String name) {
+    public Dessert findDessertByName (Cuisine cuisine, String name) {
         for(DessertItem dessert: cuisine.getDessertList()) {
             if(dessert.getName().equalsIgnoreCase(name)) {
-                return dessert;
+                return new Dessert(name, dessert.getPrice());
             }
         }
         throw new RuntimeException("No dessert found");
@@ -47,7 +47,7 @@ public class CuisineManager implements Manager{
         throw new RuntimeException("No cuisine found");
     }
 
-    public Lunch getLunch(CourseItem mainCourse, DessertItem dessert) {
+    public Lunch getLunch(MainCourse mainCourse, Dessert dessert) {
         return new LunchBuilder().mainCourse(mainCourse).dessert(dessert).build();
     }
 
