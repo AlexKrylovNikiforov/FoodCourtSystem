@@ -10,7 +10,7 @@ import java.util.List;
 
 public class OrderManager implements Manager {
 
-    private List<Order> orderList = new ArrayList<>();
+    private final List<Order> orderList = new ArrayList<>();
 
     public Order createOrder(Lunch lunch, CompleteDrink drink) {
         if(drink == null) {
@@ -22,6 +22,19 @@ public class OrderManager implements Manager {
         else {
             return new OrderBuilder().lunch(lunch).drink(drink).build();
         }
+    }
+
+    public float getOrderPrice(Order order) {
+        float totalPrice = 0.0F;
+        if(order.getLunch() == null) {
+            totalPrice += order.getDrink().getPrice();
+        }
+        else if(order.getDrink() == null) {
+            totalPrice += order.getLunch().getPrice();
+        } else {
+            totalPrice += (order.getLunch().getPrice() + order.getDrink().getPrice());
+        }
+        return totalPrice;
     }
 
 

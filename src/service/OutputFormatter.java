@@ -4,6 +4,7 @@ import data.complement.FreeComplementData;
 import data.drink.DrinkData;
 import interfaces.CourseItem;
 import interfaces.DessertItem;
+import manager.OrderManager;
 import model.Cuisine;
 import model.Order;
 
@@ -42,6 +43,7 @@ public class OutputFormatter {
     }
 
     public String formatOrderOutput(Order order) {
+        OrderManager orderManager = new OrderManager();
         StringBuilder builder = new StringBuilder();
         if(order.getLunch() != null) {
             builder.append(order.getLunch().getMainCourse().getName()).append("\n");
@@ -49,8 +51,12 @@ public class OutputFormatter {
         } else {
             builder.append("No lunch selected\n");
         }
-        builder.append(order.getDrink() != null ? order.getDrink().getName() + "\n" : "No drink selected\n");
-        builder.append("Total price: ").append(order.getPrice());
+        if (order.getDrink() != null) {
+            builder.append(order.getDrink().getName()).append("\n");
+        } else {
+            builder.append("No drink selected\n");
+        }
+        builder.append("Total price: ").append(orderManager.getOrderPrice(order));
         return builder.toString();
     }
 

@@ -1,23 +1,19 @@
 package consoleview;
 
-
-import interfaces.CourseItem;
-import interfaces.DessertItem;
 import manager.FoodCourtManager;
 import model.*;
 import service.OutputFormatter;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class ConsoleView {
-    private ConsoleController controller = new ConsoleController();
-    private OutputFormatter outputFormatter= new OutputFormatter();
-    private FoodCourtManager foodCourtManager = new FoodCourtManager();
-    private Scanner sc = new Scanner(System.in);
+    private final ConsoleController controller = new ConsoleController();
+    private final OutputFormatter outputFormatter= new OutputFormatter();
+    private final FoodCourtManager foodCourtManager = new FoodCourtManager();
+    private final Scanner sc = new Scanner(System.in);
     private int userInput;
-    private List<Cuisine> availableCuisines = foodCourtManager.initializeFoodCourt();;
+    private final List<Cuisine> availableCuisines = foodCourtManager.initializeFoodCourt();
 
     public void startApp() {
         System.out.println("HELLO");
@@ -50,8 +46,9 @@ public class ConsoleView {
                 }
                 case 4 -> {
                     Drink currentDrink = controller.selectDrink();
-                    List<String> userSelection = controller.selectComplements();
-                    List<? extends Complement> selectedComplements = foodCourtManager.getComplementList(userSelection);
+                    displayComplementSelection();
+                    List<String> userComplementSelection = controller.selectComplements();
+                    List<? extends Complement> selectedComplements = foodCourtManager.getComplementList(userComplementSelection);
                     CompleteDrink completeDrink = foodCourtManager.getCompleteDrink(currentDrink, selectedComplements);
                     Lunch lunch = null;
                     Order currentOrder = foodCourtManager.createOrder(lunch, completeDrink);

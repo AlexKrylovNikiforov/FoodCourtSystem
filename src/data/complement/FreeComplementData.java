@@ -6,17 +6,17 @@ public enum FreeComplementData implements FreeItem {
     ICE("Ice Cube"),
     LEMON("Lemon Slice");
 
-    private final String label;
-    FreeComplementData(String label) {
-        this.label = label;
+    private final String name;
+    FreeComplementData(String name) {
+        this.name = name;
     }
 
     @Override
     public String getName() {
-        return label;
+        return name;
     }
 
     public float getPrice() {
-        return this.getPrice();
+        return 0.0F;
     }
 }

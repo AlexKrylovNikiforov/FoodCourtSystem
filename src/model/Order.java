@@ -20,7 +20,4 @@ public class Order{
         this.drink = drink;
     }
 
-    public float getPrice() {
-        return drink != null ? lunch.getPrice() + drink.getPrice() : lunch.getPrice();
-    }
 }

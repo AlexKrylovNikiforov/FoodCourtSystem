@@ -52,8 +52,7 @@ public class FoodCourtManager implements Manager{
     }
 
     private Cuisine initializeCuisine(String name, List<? extends CourseItem> mainCourses, List<? extends DessertItem> desserts) {
-        Cuisine cuisine = cuisineManager.initializeCuisine(name, mainCourses, desserts);
-        return cuisine;
+        return cuisineManager.initializeCuisine(name, mainCourses, desserts);
     }
 
     public Lunch getLunch(MainCourse mainCourse, Dessert dessert) {
@@ -71,7 +70,7 @@ public class FoodCourtManager implements Manager{
     public List<? extends Complement> getComplementList(List<String> selectedComplements) {
         List<Complement> currentComplements = new ArrayList<>();
         for(String selectedCoplement: selectedComplements) {
-            currentComplements.add(cuisineManager.getFreeComplement(selectedCoplement));
+            currentComplements.add(cuisineManager.findFreeComplementByName(selectedCoplement));
         }
         return currentComplements;
     }

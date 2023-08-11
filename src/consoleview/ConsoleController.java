@@ -54,17 +54,17 @@ public class ConsoleController {
     }
 
     public List<String> selectComplements() {
-        List<String> userSelection = new ArrayList<>();
+        List<String> userComplementSelection = new ArrayList<>();
         int userInput = Integer.parseInt(sc.nextLine());
         switch (userInput) {
-            case 1 -> userSelection.add("ice");
+            case 1 -> userComplementSelection.add("ice cube");
             case 2 ->
-                userSelection.add("ice");
+                userComplementSelection.add("lemon slice");
             case 3 -> {
-                userSelection.add("ice");
-                userSelection.add("lemon");
+                userComplementSelection.add("ice cube");
+                userComplementSelection.add("lemon slice");
             }
         }
-        return userSelection;
+        return userComplementSelection;
     }
 }

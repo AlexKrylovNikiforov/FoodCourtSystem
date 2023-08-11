@@ -60,6 +60,15 @@ public class CuisineManager implements Manager{
         throw new RuntimeException("No drink found");
     }
 
+    public FreeComplement findFreeComplementByName(String selectedCoplement) {
+        for(FreeComplementData freeComplementData: FreeComplementData.values()) {
+            if(freeComplementData.getName().equalsIgnoreCase(selectedCoplement)) {
+                return new FreeComplement(selectedCoplement);
+            }
+        }
+        throw new RuntimeException("No complement found");
+    }
+
     public List<? extends Complement> getFreeComplements(List<String> selectedComplements) {
         List<FreeComplement> complements = new ArrayList<>();
         for(FreeComplementData complement: FreeComplementData.values()) {
@@ -75,14 +84,5 @@ public class CuisineManager implements Manager{
 
     public CompleteDrink getCompleteDrink(Drink drink, List<? extends Complement> complements) {
         return new DrinkBuilder().drink(drink).complements(complements).build();
-    }
-
-    public Complement getFreeComplement(String selectedCoplement) {
-        for(FreeComplementData freeComplementData: FreeComplementData.values()) {
-            if(selectedCoplement.equalsIgnoreCase(freeComplementData.getName())) {
-                return new FreeComplement(selectedCoplement);
-            }
-        }
-        throw new RuntimeException("No complement found");
     }
 }
